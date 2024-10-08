@@ -13,35 +13,15 @@ A comprehensive supply chain dataset will be analyzed, containing defect quantit
 
 ---
 
-## Data Cleaning Report
+## Data Cleaning 
 
-### Why Data Cleaning is Important?
-
-Data cleaning is an essential part of the analysis process because unclean data can lead to incorrect conclusions and misleading insights. Cleaning the dataset ensures that all inconsistencies, errors, and missing data points are addressed, providing a reliable foundation for decision-making. Without cleaning, issues such as duplicate records, invalid entries, and structural errors could skew the analysis, leading to inaccurate visualizations and recommendations.
-
+ Data cleaning was conducted before the analysis to ensure the reliability and accuracy of the dataset, as unclean data can lead to incorrect conclusions and misleading insights. This essential process addressed 
+ inconsistencies, errors, and missing data points, providing a reliable foundation for decision-making. The cleaning involved removing duplicates, handling missing data, standardizing formats, correcting inconsistencies, 
+ and fixing structural errors. By thoroughly preparing the data, a solid foundation was established for effective analysis and informed decision-making. The cleaning process for this report is detailed below:
+ 
 ---
 
-### Data Cleaning Process
-
-This report outlines the data cleaning process undertaken to prepare the dataset for analysis. The dataset consists of four sheets: **Supplier Quantity**, **Material Type**, **Defect Type**, and **Defect**. Each sheet was systematically reviewed using a comprehensive checklist to ensure the data's accuracy and consistency.
-
-#### Data Cleaning Checklist
-- **Remove duplicates**
-- **Handle missing data**
-- **Standardize formats**
-- **Correct inconsistencies**
-- **Remove irrelevant data**
-- **Fix structural errors**
-- **Validate accuracy**
-- **Address outliers**
-- **Correct data types**
-- **Document cleaning steps**
-
----
-
-### Sheet-by-Sheet Cleaning
-
-#### 1. Supplier Quantity
+#### 1. Supplier Quantity Sheet
 
 - **Vendor Name Issue**:  
   Two similar entries, "Abata" and "abatz", were flagged for potential duplication. Further investigation or contact with the data owner was needed to clarify if these refer to the same vendor.
@@ -115,7 +95,7 @@ Vendor A had the most downtime hours, with **Raw Materials** being the category 
   
 - **Category Performance Comparison:** Vendors supplying packaging materials had fewer defects and downtime compared to those supplying raw materials, indicating stronger performance.
 
-- **Impact by Defect Type:** Different defect types impacted vendors differently. For instance, Vendor D had frequent labeling issues, which, although minor, caused repeated production delays.
+- **Impact by Defect Type:** Different defect types impacted vendors differently. For instance, Vendor D had frequent labelling issues, which, although minor, caused repeated production delays.
 
 ---
 
