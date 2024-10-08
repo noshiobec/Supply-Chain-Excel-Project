@@ -23,9 +23,6 @@ A comprehensive supply chain dataset will be analyzed, containing defect quantit
 
 #### 1. Supplier Quantity Sheet
 
-- **Vendor Name Issue**:  
-  Two similar entries, "Abata" and "abatz", were flagged for potential duplication. Further investigation or contact with the data owner was needed to clarify if these refer to the same vendor.
-
 - **Data Types**:  
   Columns were checked to ensure each field was of the correct type, such as integers for quantities and dates formatted correctly.
 
@@ -64,38 +61,34 @@ A comprehensive supply chain dataset will be analyzed, containing defect quantit
 
 ## Vendor Analysis Report
 
-The vendor analysis was conducted using Excel to evaluate the performance of various suppliers and their impact on production downtime and defects. An interactive dashboard was developed with slicers to allow users to filter the data by vendor, material type, and defect type. The analysis provided insights into which vendors were affecting production the most, which had the highest defect rates, and the financial implications of these defects.
+The vendor analysis was conducted using an Excel pivot table to evaluate the performance of various suppliers and their impact on production downtime and defects. An interactive dashboard was developed with slicers to allow users to filter the data by vendor, material type, and defect type. The analysis provided insights into which vendors were affecting production the most, which had the highest defect rates, and the financial implications of these defects.
 
-![report1](https://github.com/user-attachments/assets/d1254e4a-a3ec-4750-a265-15e46fc5a144)  <!-- Insert first report pic here -->
+![report1](https://github.com/user-attachments/assets/d1254e4a-a3ec-4750-a265-15e46fc5a144)
 
 ---
 
 ### Key Vendor Analysis Insights
 
-#### 1. **Which vendor is affecting production majorly?**
-Vendor A was identified as the main contributor to production downtime, with significantly higher downtime hours compared to other vendors. This vendor caused over **10,441 hours** of production downtime, largely due to defects in raw materials.
+#### 1. Which vendor is affecting production the most?
+Vendor Avamm was identified as the main contributor to production downtime, with significantly higher downtime hours compared to other vendors. This vendor caused over **1164.82 hours** of production downtime.
 
-#### 2. **Top and Bottom 10 Vendors with Highest Downtime**
+#### 2. Top and Bottom 10 Vendors with Highest Downtime
 Through the dashboard, a ranking of vendors was created to show the **Top 10 vendors** with the most downtime, which collectively accounted for a significant portion of total downtime. Conversely, the **Bottom 10 vendors** had minimal downtime, indicating their reliability.
 
-#### 3. **Which vendor has the highest defective raw materials being supplied?**
-Vendor C was flagged for supplying the highest quantity of defective raw materials, delivering **124.12 million defective units**. This resulted in considerable production inefficiencies.
+#### 3. Which vendor has the highest quantity of defective raw materials supplied?
+Vendor Yombu was flagged for supplying the highest quantity of defective raw materials, delivering **15.14 million defective units**. This resulted in considerable production inefficiencies. When defective raw materials that had no impact on production were filtered out, Yombu still topped the chart.
 
-#### 4. **Which vendor has the highest cost implications?**
-Vendor B caused the highest financial impact due to defects and downtime. The cost associated with downtime from this vendor was disproportionately higher compared to other vendors, despite not having the longest downtime in hours.
+#### 4. Which vendor has the highest cost implications?
+Vendor Yombu also caused the highest financial impact due to defects and downtime. The cost associated with downtime from this vendor was disproportionately higher compared to other vendors, which was expected as it had the highest defective raw materials.
 
-#### 5. **Which vendor has more downtime, and which category is the item?**
-Vendor A had the most downtime hours, with **Raw Materials** being the category most affected. Other categories such as **Crates** and **Labels** also contributed but to a lesser extent.
-
----
+#### 5. Which vendor has more downtime, and which category is the item?
+Vendor Avamm had the most downtime hours, with **Mechanicals** being the category most affected.
 
 ### Additional Insights from Vendor Analysis
 
-- **Defect Trends Over Time:** A trend analysis revealed that certain vendors caused more downtime during specific months, suggesting operational or seasonal issues that need to be addressed.
+- **Top Plant Location by Vendor Count:** This analysis highlights the plant locations with the highest number of vendors supplying defective raw materials. Riverside leads with 199 vendors, followed closely by Charles City with 198. Twin Rocks and Hingham each have 194 vendors, while Chesaning has 188 vendors.
   
-- **Category Performance Comparison:** Vendors supplying packaging materials had fewer defects and downtime compared to those supplying raw materials, indicating stronger performance.
-
-- **Impact by Defect Type:** Different defect types impacted vendors differently. For instance, Vendor D had frequent labelling issues, which, although minor, caused repeated production delays.
+- **Interactive Filtering with Slicers:** Slicers were incorporated into the report to allow dynamic filtering by defect types, categories, years, and months. This interactive feature enables users to drill down into specific data points, such as analyzing the impact of particular defects over time or by category. This adds an extra layer of analysis and flexibility, allowing for deeper insights into vendor performance trends.
 
 ---
 
@@ -103,87 +96,89 @@ Vendor A had the most downtime hours, with **Raw Materials** being the category 
 
 The second part of the analysis focused on identifying the materials, defect types, and specific defects that have the greatest impact on production. This dashboard answered key questions about the role of materials and defects in downtime and production inefficiencies.
 
-
 ![Material and defect report](https://github.com/user-attachments/assets/b909506b-2b87-4615-8157-512786e70308)
 
 ---
 
 ### Material Analysis
 
-#### 1. **What materials are having a huge impact on production?**
-The dashboard highlighted that **Raw Materials** and **Crates** were the materials causing the highest production downtime, contributing significantly to the total downtime hours.
+#### 1. What materials are having a huge impact on production?
+The dashboard highlighted that **Raw Materials** and **Batteries** are causing the highest production downtime. Raw Materials accounted for 10,441 hours of downtime, while Batteries followed closely with 10,334 hours, making them the most impactful materials.
 
-#### 2. **Of what quantity are these materials affecting production?**
-**Raw Materials** contributed over **124.12 million defective units**, followed by **Crates** with **119.79 million defective units**, both heavily impacting production.
+#### 2. What quantity of these materials is affecting production?
+**Raw Materials** contributed 124.12 million defective units, followed by Crates with 119.79 million defective units. Labels (118.34M), Electrolytes (118.24M), and Batteries (117.55M) also significantly affected production with high defect quantities.
 
-#### 3. **What is the trend pattern of the materials being defected?**
-A trend analysis of defect quantities over time showed that defects in raw materials peaked during certain months, indicating possible issues with the supplier or manufacturing processes during those periods.
+#### 3. What is the trend pattern of the materials being defected?
+A trend analysis of defect quantities over time showed that defects in raw materials peaked during certain months, indicating possible issues with the supplier or manufacturing processes during those periods. The trend analysis shows a rise in defective materials from 2018 to 2019:
+- In 2018, defect quantities peaked in March (141.32M) and November (128.78M), totaling 1.16B units.
+- In 2019, defects surged, especially in October (224.44M), with a total of 1.43B units, marking a clear increase compared to 2018.
 
-#### 4. **Is there any particular category that consistently faces more defects than others?**
-The **Raw Materials** category consistently had higher defect rates across various vendors, making it a priority for quality control and vendor management interventions.
+#### 4. Is there any particular category that consistently faces more defects than others?
+Logistics and Mechanicals consistently face the most defects, with totals of 698,671,504 and 820,838,675 respectively. Goods & Services also show significant defects at 196,577,588, while Electrical has 92,681,909. In contrast, Packaging and Materials/Comp have fewer defects at 443,769,697 and 345,384,184. This indicates a pressing need for quality improvement efforts, especially in Logistics and Mechanicals.
 
 ---
 
 ### Defect Type Analysis
 
-#### 1. **What is the quantity distribution of defect types?**
-The defect type distribution showed that **Mechanical defects** accounted for the highest number of defective units, followed by **Logistics and Packaging defects**. Mechanical defects alone contributed **820.8 million defective units**, significantly impacting production.
+#### 1. What is the quantity distribution of defect types?
+The defect type distribution showed that **No Impact** accounted for the highest number of defective units, followed by **Impact** and lastly **Rejected**. No Impact had about 872.70 million quantities, Impact about 870.6 million, and Rejected 854 million.
 
-#### 2. **What downtime hours are attributed to each defect type?**
-Mechanical defects also caused the most downtime, with over **10,441 hours** lost due to this defect type, making it the most critical area to address.
+#### 2. What downtime hours are attributed to each defect type?
+The downtime hours associated with each defect type are as follows:
+- Rejected defects led to the highest downtime, with 73,092.82 hours.
+- No Impact defects resulted in 71,984.15 hours of downtime.
+- Impact defects contributed 70,732.95 hours of downtime.
+
+Rejected defects are the most time-consuming to address, closely followed by No Impact defects.
 
 ---
 
 ### Defect Analysis
 
-#### 1. **Which defect has the highest quantity affecting production?**
-**Mechanical defects** were identified as having the highest quantity of defective units, posing the greatest threat to production continuity.
+#### 1. Which defect has the highest quantity affecting production?
+The defect with the highest quantity affecting production was **Wrong Specification**, with a total of 18,053,647 defective units. This defect poses a significant issue for the business, disrupting production more than any other defect type.
 
-#### 2. **What is the top defect trending that the business should focus on?**
-The trend analysis showed that **Mechanical and Logistics defects** are the top trending issues, consistently recurring across various vendors and time periods. The business should prioritize resolving these defects through vendor engagement and improved quality control processes.
-
----
+#### 2. What is the top defect trending that the business should focus on?
+The trend analysis reveals that **Wrong Specification** is the top defect consistently affecting production across quarters. Notably, in Qtr4 2019, this defect reached its peak with 4,601,877 defective units. The business should focus on improving specifications and communication with vendors to reduce this issue.
 
 ### Additional Insights from the Material and Defect Analysis
 
-- **Impact of Electrical Components:** Although not the highest in terms of defective quantity, **Electrical components** caused significant downtime compared to their defect rate, suggesting they require closer attention in terms of quality assurance.
-  
-- **Consistent Defect Sources:** Certain vendors were flagged for consistently supplying defective goods across multiple categories, making them high-risk suppliers.
+- **Interactive Filtering with Slicers:** Slicers were incorporated into the report to allow dynamic filtering by defect types, categories, years, and months. This interactive feature enables users to drill down into specific data points, such as analyzing the impact of particular defects over time or by category. This adds an extra layer of analysis and flexibility, allowing for deeper insights into vendor performance trends.
 
----
+
 ## Recommendations
 
 Based on the findings from the vendor, material, and defect analyses, the following recommendations are proposed to optimize production efficiency, reduce downtime, and enhance supplier performance:
 
-### 1. **Vendor Performance Improvement Strategies**
-   - **Engage with High-Downtime Vendors:** Vendors such as Vendor A and Vendor C, which caused the most downtime and supplied the highest quantity of defective materials, should be prioritized for performance review meetings. Implement vendor performance agreements that include penalties for excessive defects or downtime.
-   - **Vendor Quality Audits:** Conduct regular audits on underperforming vendors. This should focus on quality control processes at their facilities, particularly those related to **Raw Materials** and **Crates**, which had the highest defect quantities.
-   - **Vendor Tiering:** Establish a tiered vendor management system, rewarding high-performing vendors with better contracts and penalizing those with consistently high downtime or defect rates.
+### 1. **Enhance Vendor Engagement**
+   - Prioritize performance review meetings with high-downtime vendors like **Vendor Avamm** and **Vendor Yombu**. Implement performance agreements that include penalties for excessive defects and downtime.
 
-### 2. **Material and Supply Chain Optimization**
-   - **Improve Quality Control for Raw Materials:** Since raw materials have the largest impact on downtime and defect quantities, enhancing the quality checks at both the receiving and production stages can help reduce the incidence of defective materials entering the production line.
-   - **Review Material Specifications:** Collaborate with vendors to review and possibly update material specifications, particularly for categories like **Raw Materials** and **Crates**. Consider introducing stricter quality thresholds to minimize defects.
-   - **Implement Buffer Stock for High-Impact Materials:** For materials such as **Crates** and **Raw Materials**, where defects lead to significant downtime, consider maintaining a buffer stock to mitigate the effects of delays caused by defective supplies.
+### 2. **Conduct Regular Vendor Audits**
+   - Establish a routine audit process for underperforming vendors to evaluate their quality control processes, especially those supplying **Raw Materials** and **Crates**, which showed significant defect quantities.
 
-### 3. **Defect Management and Prevention**
-   - **Focus on Mechanical Defects:** Mechanical defects contributed to the highest downtime hours and defect quantities. The business should focus on improving its internal maintenance and quality control systems. Invest in advanced monitoring systems that flag issues early, allowing preventive measures to be taken before major downtimes occur.
-   - **Target Recurring Defect Types:** Logistics and packaging defects also emerged as significant contributors to production issues. Engaging both the suppliers and internal teams in root cause analysis for these defects will help identify process improvements and equipment upgrades needed to reduce their occurrence.
+### 3. **Implement Quality Control Improvements**
+   - Strengthen quality assurance checks for high-impact materials, particularly **Raw Materials** and **Batteries**, at both receiving and production stages to reduce defects entering the production line.
 
-### 4. **Improve Vendor Contracting and Cost Management**
-   - **Performance-Based Contracts:** Introduce performance-based contracts for vendors, where payment terms or contract renewals are tied to meeting defect rate and downtime targets. Vendors who continually underperform should face penalties or have their contracts reconsidered.
-   - **Total Cost of Ownership (TCO) Analysis:** Conduct a thorough TCO analysis to assess the real impact of vendor performance, factoring in defect rates, downtime, and the financial implications of delays. Use this data to renegotiate vendor contracts to ensure cost efficiencies.
-   
-### 5. **Enhanced Data Monitoring and Reporting**
-   - **Establish Real-Time Dashboards:** Implement real-time data tracking for critical metrics such as defect quantities, downtime, and vendor performance. The interactive dashboard built in this analysis should be expanded to track these metrics in real-time, allowing management to intervene immediately when issues arise.
-   - **Regular Performance Reviews:** Schedule quarterly performance reviews with all vendors using the dashboard insights to track progress. This will ensure that both vendors and internal teams are aligned in reducing defects and downtime.
+### 4. **Review and Update Material Specifications**
+   - Collaborate with suppliers to revise material specifications and introduce stricter quality thresholds, specifically for categories with high defect rates.
 
-### 6. **Collaboration with Vendors on Process Improvements**
-   - **Joint Improvement Initiatives:** Work closely with high-impact vendors to co-develop process improvements aimed at reducing defect rates. This could include joint investment in technology, training, or lean manufacturing initiatives that benefit both parties.
-   - **Vendor Training Programs:** Offer training programs for vendors on the specific quality issues identified, such as mechanical defects and packaging problems. This will ensure that suppliers are equipped to meet the company’s stringent quality standards.
+### 5. **Optimize Supply Chain Management**
+   - Maintain buffer stock for critical materials like **Crates** and **Raw Materials** to mitigate production disruptions caused by defective supplies.
 
-### 7. **Production Process Adjustments**
-   - **Process Redesign for Defect-Prone Materials:** Review the production processes related to **Raw Materials**, **Crates**, and **Labels**. Evaluate whether certain stages can be automated or made more efficient to reduce the impact of defects on the overall production process.
-   - **Preventative Maintenance Programs:** Given the significant downtime caused by mechanical defects, implementing a robust preventative maintenance program can help mitigate production disruptions. Regular machine inspections and maintenance scheduling should be prioritized.
+### 6. **Focus on Mechanical Defects**
+   - Invest in advanced monitoring systems for mechanical components, enhancing internal maintenance practices to address the highest sources of downtime and defect quantities.
+
+### 7. **Conduct Root Cause Analysis**
+   - Engage suppliers and internal teams in root cause analyses for logistics and packaging defects, identifying necessary process improvements and equipment upgrades to minimize these issues.
+
+### 8. **Introduce Performance-Based Contracts**
+   - Create performance-based contracts for vendors, tying payment terms to defect rates and downtime metrics, ensuring accountability for consistent performance.
+
+### 9. **Utilize Total Cost of Ownership (TCO) Analysis**
+   - Conduct TCO analyses to assess the true impact of vendor performance on costs, using insights to renegotiate contracts for better financial outcomes.
+
+### 10. **Establish Real-Time Monitoring Systems**
+   - Develop real-time dashboards to track key performance metrics, such as defect quantities and vendor performance, allowing for immediate intervention and quarterly performance reviews with all vendors.
 
 ---
 
