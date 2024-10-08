@@ -19,8 +19,6 @@ A comprehensive supply chain dataset will be analyzed, containing defect quantit
  inconsistencies, errors, and missing data points, providing a reliable foundation for decision-making. The cleaning involved removing duplicates, handling missing data, standardizing formats, correcting inconsistencies, 
  and fixing structural errors. By thoroughly preparing the data, a solid foundation was established for effective analysis and informed decision-making. The cleaning process for this report is detailed below:
  
----
-
 #### 1. Supplier Quantity Sheet
 
 - **Data Types**:  
@@ -57,8 +55,6 @@ A comprehensive supply chain dataset will be analyzed, containing defect quantit
 - **Final Adjustments**:  
   After merging the necessary data, columns were renamed for clarity, ensuring the final dataset was ready for analysis.
 
----
-
 ## Vendor Analysis Report
 
 The vendor analysis was conducted using an Excel pivot table to evaluate the performance of various suppliers and their impact on production downtime and defects. An interactive dashboard was developed with slicers to allow users to filter the data by vendor, material type, and defect type. The analysis provided insights into which vendors were affecting production the most, which had the highest defect rates, and the financial implications of these defects.
@@ -90,8 +86,6 @@ Vendor Avamm had the most downtime hours, with **Mechanicals** being the categor
   
 - **Interactive Filtering with Slicers:** Slicers were incorporated into the report to allow dynamic filtering by defect types, categories, years, and months. This interactive feature enables users to drill down into specific data points, such as analyzing the impact of particular defects over time or by category. This adds an extra layer of analysis and flexibility, allowing for deeper insights into vendor performance trends.
 
----
-
 ## Material, Defect, and Defect Type Analysis
 
 The second part of the analysis focused on identifying the materials, defect types, and specific defects that have the greatest impact on production. This dashboard answered key questions about the role of materials and defects in downtime and production inefficiencies.
@@ -116,8 +110,6 @@ A trend analysis of defect quantities over time showed that defects in raw mater
 #### 4. Is there any particular category that consistently faces more defects than others?
 Logistics and Mechanicals consistently face the most defects, with totals of 698,671,504 and 820,838,675 respectively. Goods & Services also show significant defects at 196,577,588, while Electrical has 92,681,909. In contrast, Packaging and Materials/Comp have fewer defects at 443,769,697 and 345,384,184. This indicates a pressing need for quality improvement efforts, especially in Logistics and Mechanicals.
 
----
-
 ### Defect Type Analysis
 
 #### 1. What is the quantity distribution of defect types?
@@ -128,10 +120,7 @@ The downtime hours associated with each defect type are as follows:
 - Rejected defects led to the highest downtime, with 73,092.82 hours.
 - No Impact defects resulted in 71,984.15 hours of downtime.
 - Impact defects contributed 70,732.95 hours of downtime.
-
-Rejected defects are the most time-consuming to address, closely followed by No Impact defects.
-
----
+Rejected defects are the most time-consuming to address, closely followed by No-impact defects.
 
 ### Defect Analysis
 
@@ -145,42 +134,30 @@ The trend analysis reveals that **Wrong Specification** is the top defect consis
 
 - **Interactive Filtering with Slicers:** Slicers were incorporated into the report to allow dynamic filtering by defect types, categories, years, and months. This interactive feature enables users to drill down into specific data points, such as analyzing the impact of particular defects over time or by category. This adds an extra layer of analysis and flexibility, allowing for deeper insights into vendor performance trends.
 
-
 ## Recommendations
 
 Based on the findings from the vendor, material, and defect analyses, the following recommendations are proposed to optimize production efficiency, reduce downtime, and enhance supplier performance:
 
 ### 1. **Enhance Vendor Engagement**
    - Prioritize performance review meetings with high-downtime vendors like **Vendor Avamm** and **Vendor Yombu**. Implement performance agreements that include penalties for excessive defects and downtime.
-
 ### 2. **Conduct Regular Vendor Audits**
    - Establish a routine audit process for underperforming vendors to evaluate their quality control processes, especially those supplying **Raw Materials** and **Crates**, which showed significant defect quantities.
-
 ### 3. **Implement Quality Control Improvements**
    - Strengthen quality assurance checks for high-impact materials, particularly **Raw Materials** and **Batteries**, at both receiving and production stages to reduce defects entering the production line.
-
 ### 4. **Review and Update Material Specifications**
    - Collaborate with suppliers to revise material specifications and introduce stricter quality thresholds, specifically for categories with high defect rates.
-
 ### 5. **Optimize Supply Chain Management**
    - Maintain buffer stock for critical materials like **Crates** and **Raw Materials** to mitigate production disruptions caused by defective supplies.
-
 ### 6. **Focus on Mechanical Defects**
    - Invest in advanced monitoring systems for mechanical components, enhancing internal maintenance practices to address the highest sources of downtime and defect quantities.
-
 ### 7. **Conduct Root Cause Analysis**
    - Engage suppliers and internal teams in root cause analyses for logistics and packaging defects, identifying necessary process improvements and equipment upgrades to minimize these issues.
-
 ### 8. **Introduce Performance-Based Contracts**
    - Create performance-based contracts for vendors, tying payment terms to defect rates and downtime metrics, ensuring accountability for consistent performance.
-
 ### 9. **Utilize Total Cost of Ownership (TCO) Analysis**
    - Conduct TCO analyses to assess the true impact of vendor performance on costs, using insights to renegotiate contracts for better financial outcomes.
-
 ### 10. **Establish Real-Time Monitoring Systems**
    - Develop real-time dashboards to track key performance metrics, such as defect quantities and vendor performance, allowing for immediate intervention and quarterly performance reviews with all vendors.
-
----
 
 **Conclusion:**
 By implementing these recommendations, the business can expect to see a reduction in production downtime, improved vendor performance, and lower defect rates. A stronger focus on quality control, vendor collaboration, and real-time monitoring will help create a more efficient and resilient supply chain.
