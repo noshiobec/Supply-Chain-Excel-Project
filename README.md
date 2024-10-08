@@ -2,13 +2,15 @@
 
 ## Project Overview
 
-This project aims to analyze vendor performance, material defect types, and their impacts on production downtime and costs across various plant locations. By leveraging Power BI, the analysis offers a comprehensive view of vendor reliability and material defects that influence business operations. The data was cleaned and processed to ensure accuracy and consistency before being used in visualizations.
+This analysis seeks to explore and identify the key vendors and material defects affecting the operational performance of XYZ Production Company, particularly focusing on the years 2018 and 2019. Recent observations indicate a decline in customer satisfaction due to a low supply of original raw materials, leading to decreased patronage and threatening the business's survival. The objective is to highlight areas where improvement is needed to minimize downtime, defects, and overall cost implications.
 
-![Vendor Analysis Report](https://yourimageurl.com)  
-*(Replace the URL above with your image URL when you upload the image to GitHub)*
+A comprehensive supply chain dataset will be analyzed, containing defect quantities, unit prices, and downtime caused by various vendors across existing plant locations. This dataset is organized into four key sheets as shown diagram below in the below: Supplier Quality, Material Type, Defect Type, and Defect. Through data cleaning, vendor performance metrics, and material analysis, actionable insights into vendor reliability and product quality will be provided. Additionally, the analysis will focus on identifying which products have the most significant impact on operations. Interactive reports with slicers and filters will facilitate dynamic data exploration, ultimately leading to recommendations for optimizing production and improving operational efficiency.
 
-## [View Full Report](https://app.powerbi.com/view?r=your_powerbi_link_here)  
-*(Replace the link with your actual Power BI report link)*
+![First_table](https://github.com/user-attachments/assets/6fff64d0-6d49-40d1-9d96-69011822c03a) 
+![Other tables](https://github.com/user-attachments/assets/53103136-815c-4ae0-9c9b-5189d9a6e73a)
+
+## [View Full Report](https://1drv.ms/x/c/b110de158371509c/EQONTWL8NnJNh2IP53C4jmAB0Cl42yPXDQ5ZeN4KhLeJXg?e=O3cB6f)  
+
 ---
 
 ## Data Cleaning Report
@@ -84,7 +86,7 @@ This report outlines the data cleaning process undertaken to prepare the dataset
 
 The vendor analysis was conducted using Excel to evaluate the performance of various suppliers and their impact on production downtime and defects. An interactive dashboard was developed with slicers to allow users to filter the data by vendor, material type, and defect type. The analysis provided insights into which vendors were affecting production the most, which had the highest defect rates, and the financial implications of these defects.
 
-![Vendor Analysis Dashboard](insert_image_link_here)  <!-- Insert first report pic here -->
+![report1](https://github.com/user-attachments/assets/d1254e4a-a3ec-4750-a265-15e46fc5a144)  <!-- Insert first report pic here -->
 
 ---
 
@@ -121,7 +123,8 @@ Vendor A had the most downtime hours, with **Raw Materials** being the category 
 
 The second part of the analysis focused on identifying the materials, defect types, and specific defects that have the greatest impact on production. This dashboard answered key questions about the role of materials and defects in downtime and production inefficiencies.
 
-![Material and Defect Analysis Dashboard](insert_image_link_here) <!-- Insert second report pic here -->
+
+![Material and defect report](https://github.com/user-attachments/assets/b909506b-2b87-4615-8157-512786e70308)
 
 ---
 
